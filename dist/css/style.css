@@ -23,6 +23,10 @@ h2 {
 	vertical-align: middle;
 }
 
+ul li {
+	list-style-type: none;
+}
+
 .red {
 	color: #e0182a;
 }
@@ -230,16 +234,61 @@ h2 {
 
 /*Form-2*/
 
+.form-2 {
+	background-color: grey;
+	padding: 140px 0;
+}
+
 .form-2 h2 {
 	text-align: left;
 	color: #FFF;
+	font-size: 46px;
+	line-height: 64px;
+}
+
+.form-2 .text,
+.form-2 .btn-red {
+	font-size: 26px;
+	line-height: 40px;
+	color: #FFF;
+}
+
+.form-2 .btn-red {
+	background-color: #F83030;
+	line-height: 30px;
+}
+
+.form-2 ul {
+	padding: 0;
+	margin-top: 30px;
+}
+
+.form-2 ul li {
+	padding-left: 40px;
+	position: relative;
+	list-style-type: none;
+	font-size: 20px;
+	line-height: 40px;
+}
+
+.form-2 li .tick {
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+	background-color: blue;
 }
 
 .form-2 .wrap {
-	padding: 40px 0 45px;
+	padding: 40px 20px 45px;
+	background-color: #FFF;
+	border-radius: 8px;
 }
 
-.form-2 .title {
+.form-2 .wrap .title {
 	color: #463c31;
 	font-weight: 500;
 	font-size: 30px;
@@ -247,7 +296,7 @@ h2 {
 	text-align: center;
 }
 
-.form-2 .text {
+.form-2 .wrap .text {
 	color: #463c31;
 	font-size: 16px;
 	font-weight: 300;
@@ -280,6 +329,47 @@ form input {
 	margin-bottom: 15px;
 }
 
+/*Prices-2*/
+
+.prices-2 {
+	padding: 100px 0 50px;
+}
+
+.prices-2 .text {
+	text-align: center;
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 40px;
+}
+
+.prices-2 .table-info {
+	width: 100%;
+	font-size: 16px;
+}
+
+.prices-2 .table-info tr {
+	line-height: 20px;
+	border: 1px solid #DBDBDB;
+}
+
+.prices-2 .table-info td div {
+	padding: 23px 0;
+}
+
+.prices-2 .table-info tr:nth-child(even) {
+	background-color: #F5F5F5;
+}
+
+.prices-2 .table-info .name {
+	padding-left: 15px;
+}
+
+.prices-2 .table-info .price {
+	width: 197px;
+	padding-left: 35px;
+	border-left: 1px solid #DBDBDB;
+}
+
 /*Icons-2*/
 
 .icons-2 .prod-box {
@@ -307,10 +397,21 @@ form input {
 	border-color: #FF6C00;
 }
 
+/*Drop-text*/
+
+.drop-text {
+	padding: 80px 0;
+}
+
 .drop-text article {
 	overflow: hidden;
 	height: 150px;
 	position: relative;
+	margin-bottom: 70px;
+}
+
+.drop-text h2 {
+	margin-bottom: 10px;
 }
 
 .drop-text article:after {
@@ -323,6 +424,8 @@ form input {
 	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
 	background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
 }
+
+/*Footer*/
 
 footer.main {
 	background-color: #222222;
