@@ -11,6 +11,7 @@ body {
 h2 {
 	line-height: 46px;
 	text-align: center;
+	margin-top: 0;
 }
 
 .icon {
@@ -18,7 +19,8 @@ h2 {
 	height: 30px;
 	position: relative;
 	background-color: grey;
-	float: left;
+	display: inline-block;
+	vertical-align: middle;
 }
 
 .red {
@@ -29,11 +31,51 @@ h2 {
 	text-align: center;
 }
 
-.container {
-	width: 1170px;
+/*Icons-1*/
+
+.icons-1 {
+	padding: 80px 0;
+	background-image: url('http://placehold.it/1920x500');
+	background-repeat: no-repeat;
+}
+
+.icons-1 h2 {
+	margin-bottom: 50px;
+	color: #FFF;
+}
+
+.icons-1 .icon-box {
+	width: 98px;
+	height: 98px;
+	line-height: 98px;
+	text-align: center;
+	box-sizing: border-box;
+	border: 2px solid #FFF;
+	border-radius: 50%;
+	margin: 0 auto 20px;
+}
+
+.icons-1 h4 {
+	color: #FFF;
+	font-size: 20px;
+	line-height: 28px;
+	font-weight: 500;
+	text-align: center;
+}
+
+.icons-1 .text {
+	color: #FFF;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: normal;
+	text-align: center;
 }
 
 /*About*/
+
+.about {
+	padding: 90px 0;
+}
 
 .about h2 {
 	margin-bottom: 30px;
@@ -49,6 +91,7 @@ h2 {
 
 .about header .icon {
 	margin-right: 20px;
+	float: left;
 }
 
 .about h4 {
@@ -62,6 +105,10 @@ h2 {
 }
 
 /*Prices-1*/
+
+.prices-1 h2 {
+	margin-bottom: 40px;
+}
 
 .prices-1 .item {
 	margin-bottom: 15px;
@@ -91,6 +138,10 @@ h2 {
 	position: relative;
 	box-sizing: border-box;
 	padding: 10px;
+}
+
+.prices-1 figure img {
+	margin: 0 auto;
 }
 
 .prices-1 figcaption {
@@ -136,7 +187,7 @@ h2 {
 .prices-1 .details {
 	text-align: center;
 	box-sizing: border-box;
-	padding: 20px 10px;
+	padding: 20px 0px;
 	border-top: 1px solid transparent;
 	position: relative;
 }
@@ -175,6 +226,58 @@ h2 {
 
 .prices-1 .details .price {
 	font-size: 18px;
+}
+
+/*Form-2*/
+
+.form-2 h2 {
+	text-align: left;
+	color: #FFF;
+}
+
+.form-2 .wrap {
+	padding: 40px 0 45px;
+}
+
+.form-2 .title {
+	color: #463c31;
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+
+.form-2 .text {
+	color: #463c31;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 24px;
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+
+.form-2 input[type='submit'] {
+	background-color: #FFAD1E;
+	border: none;
+	height: 50px;
+	color: #FFF;
+	font-size: 24px;
+	line-height: 26px;
+}
+
+.form-2 input[type='submit']:hover {
+	background-color: #FFB533;
+}
+
+form input {
+	width: 100%;
+	height: 40px;
+	box-sizing: border-box;
+	border: 1px solid #E2E2E2;
+	border-radius: 5px;
+	padding: 0 20px;
+	margin-bottom: 15px;
 }
 
 /*Icons-2*/
