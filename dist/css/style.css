@@ -2,6 +2,7 @@
 
 body {
 	font-size: 16px;
+	font-family: 'Open Sans', sans-serif; /*font-family: 'Lato', sans-serif;*/
 }
 
 .no-margins {
@@ -9,6 +10,7 @@ body {
 }
 
 h2 {
+	font-size: 36px;
 	line-height: 46px;
 	text-align: center;
 	margin-top: 0;
@@ -35,15 +37,20 @@ ul li {
 	text-align: center;
 }
 
+form input[type="submit"] {
+	font-family: 'Lobster', cursive;
+}
+
 /*Icons-1*/
 
 .icons-1 {
 	padding: 80px 0;
-	background-image: url('http://placehold.it/1920x500');
-	background-repeat: no-repeat;
+	background: url(/library/img/icon-1-bg-1.png) 50% 0 no-repeat;
+	background-size: cover;
 }
 
 .icons-1 h2 {
+	line-height: 36px;
 	margin-bottom: 50px;
 	color: #FFF;
 }
@@ -51,7 +58,7 @@ ul li {
 .icons-1 .icon-box {
 	width: 98px;
 	height: 98px;
-	line-height: 98px;
+	line-height: 94px;
 	text-align: center;
 	box-sizing: border-box;
 	border: 2px solid #FFF;
@@ -59,11 +66,16 @@ ul li {
 	margin: 0 auto 20px;
 }
 
+.icons-1 .icon-box img {
+	max-width: 45px;
+	max-height: 45px;
+}
+
 .icons-1 h4 {
 	color: #FFF;
 	font-size: 20px;
 	line-height: 28px;
-	font-weight: 500;
+	font-weight: 600;
 	text-align: center;
 }
 
@@ -82,7 +94,13 @@ ul li {
 }
 
 .about h2 {
-	margin-bottom: 30px;
+	margin-bottom: 60px;
+}
+
+.about h2 .logo-2 {
+	display: inline-block;
+	width: 250px;
+	height: 28px;
 }
 
 .about .description {
@@ -91,24 +109,49 @@ ul li {
 
 .about header {
 	margin-bottom: 15px;
+	display: block;
 }
 
-.about header .icon {
+.about header img {
 	margin-right: 20px;
-	float: left;
+	margin-top: -10px;
 }
 
 .about h4 {
 	font-size: 20px;
 	line-height: 28px;
 	font-weight: 500;
+	position: relative;
+	padding-left: 30px;
+	display: inline-block;
+}
+
+.about h4:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: -2px;
+	width: 15px;
+	height: 30px;
+	background: url(/library/img/Line.png) no-repeat;
 }
 
 .about .item {
 	margin-bottom: 40px;
 }
 
+/*Our works*/
+
+.our-works .row div {
+	padding: 0;
+	margin: 0;
+}
+
 /*Prices-1*/
+
+.prices-1 {
+	padding: 100px 0 90px;
+}
 
 .prices-1 h2 {
 	margin-bottom: 40px;
@@ -117,6 +160,7 @@ ul li {
 .prices-1 .item {
 	margin-bottom: 15px;
 	border: 1px solid transparent;
+	cursor: default;
 }
 
 .prices-1 .item:hover {
@@ -206,7 +250,7 @@ ul li {
 	width: 0px;
 	height: 0px;
 	border-style: solid;
-	border-width: 16px 14px 0px 14px;
+	border-width: 10px 9px 0px 9px;
 	display: none;
 }
 
@@ -224,7 +268,7 @@ ul li {
 .prices-1 .details .price {
 	font-size: 20px;
 	line-height: 28px;
-	font-weight: 500;
+	font-weight: 600;
 	margin: 0;
 }
 
@@ -232,11 +276,37 @@ ul li {
 	font-size: 18px;
 }
 
+.prices-1 .row > div:nth-child(4n + 5) {
+	clear: both;
+}
+
 /*Form-2*/
 
 .form-2 {
-	background-color: grey;
+	background: url(/library/img/form-2-bg.png) 50% 0 no-repeat;
+	background-size: cover;
 	padding: 140px 0;
+	color: #FFF;
+	position: relative;
+	z-index: 400;
+}
+
+.form-2:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.5);
+	z-index: 500;
+}
+
+.form-2 .container {
+	position: relative;
+	z-index: 600;
 }
 
 .form-2 h2 {
@@ -247,15 +317,17 @@ ul li {
 }
 
 .form-2 .text,
-.form-2 .btn-red {
+.form-2 .bg-red {
 	font-size: 26px;
 	line-height: 40px;
 	color: #FFF;
 }
 
-.form-2 .btn-red {
+.form-2 .bg-red {
 	background-color: #F83030;
-	line-height: 30px;
+	line-height: 46px;
+	padding: 0 10px;
+	display: inline-block;
 }
 
 .form-2 ul {
@@ -269,17 +341,18 @@ ul li {
 	list-style-type: none;
 	font-size: 20px;
 	line-height: 40px;
+	font-weight: 600;
 }
 
 .form-2 li .tick {
-	width: 25px;
-	height: 25px;
+	width: 20px;
+	height: 20px;
 	position: absolute;
 	top: 0;
 	left: 0;
 	bottom: 0;
 	margin: auto;
-	background-color: blue;
+	background: url(/library/img/tick.png) no-repeat;
 }
 
 .form-2 .wrap {
@@ -290,7 +363,7 @@ ul li {
 
 .form-2 .wrap .title {
 	color: #463c31;
-	font-weight: 500;
+	font-weight: 600;
 	font-size: 30px;
 	line-height: 30px;
 	text-align: center;
@@ -333,6 +406,8 @@ form input {
 
 .prices-2 {
 	padding: 100px 0 50px;
+	background: url(/library/img/prices-2-bg.png) 50% 0 no-repeat;
+	background-size: cover;
 }
 
 .prices-2 .text {
@@ -372,6 +447,19 @@ form input {
 
 /*Icons-2*/
 
+.icons-2 {
+	padding: 100px 0 125px;
+	background: url(/library/img/icons-2-bg.png) 50% 0 no-repeat;
+	background-size: cover;
+}
+
+.icons-2 .text {
+	text-align: center;
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 60px;
+}
+
 .icons-2 .prod-box {
 	width: 165px;
 	height: 165px;
@@ -379,6 +467,7 @@ form input {
 	text-align: center;
 	border: 2px solid;
 	border-radius: 50%;
+	background-color: #FFF;
 }
 
 .prod-box.box-1 {
