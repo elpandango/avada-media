@@ -12,19 +12,55 @@
 <body>
 
 <header class="menu">
+    <div class="container">
+        <a href="#" class="logo"><img src="/library/img/header-logo.png" alt="header-logo"></a>
+        <div class="right-side">
+            <div class="row top clearfix">
+                <ul class="header-phones">
+                    <li>
+                        <a href="tel:+380487703430">+38 (048) <span class="red">770 34 30</span></a>
+                    </li>
+                    <li>
+                        <a href="tel:+380675189009">+38 (067) <span class="red">518 90 09</span></a>
+                    </li>
+                </ul>
+                <div id="burger">
+                    <span class="line"></span>
+                </div>
+            </div>
+            <div class="row bottom clearfix">
+                <nav class="header-nav">
+                    <ul class="clearfix">
+                        <li><a class="scroll" href="#prices-1">Кровельные материалы</a></li>
+                        <li><a class="scroll" href="#prices-2">Кровельные работы</a></li>
+                        <li><a class="scroll" href="#works">Выполненные работы</a></li>
+                        <li><a class="scroll" href="#contacts">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="dropdown">
+            <ul>
+                <li><a class="scroll" href="#prices-1">Кровельные материалы</a></li>
+                <li><a class="scroll" href="#prices-2">Кровельные работы</a></li>
+                <li><a class="scroll" href="#works">Выполненные работы</a></li>
+                <li><a class="scroll" href="#contacts">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
 
 </header>
 
 <section class="main-page">
     <div class="trigger">
-        <header>Обратная связь</header>
+        <div class="trigger-head">Обратная связь</div>
         <div class="trigger-body">
             <div class="wrap">
                 <div class="text">If you have any questions write to me!</div>
                 <form id="index-trigger-form" method="post">
-                    <label class="input-icon-1"><input name="name" type="text" placeholder="Ваше имя*" required=""></label>
-                    <label class="input-icon-2"><input name="tel" type="tel" placeholder="Ваш номер телефона*" required=""></label>
-                    <label class="input-icon-3"><input name="email" type="email" placeholder="Ваш e-mail*" required=""></label>
+                    <label><input name="name" type="text" placeholder="Ваше имя*" required=""><img src="/library/img/user-icon.png"></label>
+                    <label><input name="tel" type="tel" placeholder="Ваш номер телефона*" required=""><img src="/library/img/phone-icon.png"></label>
+                    <label><input name="email" type="email" placeholder="Ваш e-mail*" required=""><img src="/library/img/mail-icon.png"></label>
                     <textarea name="text" placeholder="Комментарий*" required=""></textarea>
                     <input type="submit" value="Отправить">
                 </form>
@@ -45,7 +81,34 @@
         </div>
     </div>
 </section>
-<section class="form-1"></section>
+<section class="form-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+
+                <div class="text-arrow">
+                    <img src="/library/img/arrow-big.png" alt="">
+                    <h4>Оставьте заявку сегодня</h4>
+                    <div class="text lobster">и получите расчет стоимости Вашей кровли</div>
+                    <div class="text lobster"><span class="bg-red">бесплатно</span></div>
+                    <div class="text">Мы гарантируем конфиденциальность!</div>
+                </div>
+            </div>
+            <div class="col-md-4 col-md-offset-4">
+                <div class="wrap">
+                    <div class="title">Заполните форму</div>
+                    <div class="text">чтобы получите бесплатный расчет стоимости Вашей кровли!</div>
+                    <form id="index-calc" method="post">
+                        <input name="name" type="text" placeholder="Ваше имя*" required="">
+                        <input name="tel" type="tel" placeholder="Ваш номер телефона*" required="">
+                        <input name="email" type="email" placeholder="Ваш e-mail*" required="">
+                        <input type="submit" value="Отправить">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <section class="icons-1">
     <div class="container">
         <h2>Предоставляем полный комплекс услуг по кровле:</h2>
@@ -130,24 +193,24 @@
         </div>
     </div>
 </section>
-<!--<section class="our-works">-->
-    <!--<div class="row no-margins">-->
-        <!--<div class="col-md-5">-->
-            <!--<img class="img-responsive" src="http://placehold.it/750x700" alt="">-->
-        <!--</div>-->
-        <!--<div class="col-md-7">-->
-            <!--<div class="row no-margins">-->
-                <!--<div class="col-md-5"><img class="img-responsive" src="http://placehold.it/488x350" alt=""></div>-->
-                <!--<div class="col-md-7"><img class="img-responsive" src="http://placehold.it/682x350" alt=""></div>-->
-            <!--</div>-->
-            <!--<div class="row no-margins">-->
-                <!--<div class="col-md-7"><img class="img-responsive" src="http://placehold.it/682x350" alt=""></div>-->
-                <!--<div class="col-md-5"><img class="img-responsive" src="http://placehold.it/488x350" alt=""></div>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</section>-->
-<section class="prices-1">
+<section class="our-works-1">
+    <div class="clearfix">
+        <div class="left-side">
+            <div class="one-big pop-img" data-toggle="modal" data-target="#myModal"></div>
+        </div>
+        <div class="right-side">
+            <div class="row top no-margins">
+                <div class="small pop-img"  data-toggle="modal" data-target="#myModal"></div>
+                <div class="big pop-img"  data-toggle="modal" data-target="#myModal"></div>
+            </div>
+            <div class="row bottom no-margins">
+                <div class="big pop-img"  data-toggle="modal" data-target="#myModal"></div>
+                <div class="small pop-img"  data-toggle="modal" data-target="#myModal"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="prices-1" class="prices-1">
     <div class="container">
         <h2>Цены на <span class="red">кровельные материалы</span></h2>
 
@@ -360,7 +423,7 @@
         </div>
     </div>
 </section>
-<section class="prices-2">
+<section id="prices-2" class="prices-2">
     <div class="container">
         <h2>Цены на <span class="red">кровельные работы:</span></h2>
 
@@ -507,11 +570,26 @@
         </div>
     </div>
 </section>
-<!--<section class="our-works">-->
-    <!--<div class="container">-->
-        <!--<h2>Посмотрите на <span class="red">выполненные нами работы:</span></h2>-->
-    <!--</div>-->
-<!--</section>-->
+<section id="works" class="our-works-2">
+    <div class="container">
+        <h2>Посмотрите на <span class="red">выполненные нами работы:</span></h2>
+    </div>
+    <div class="clearfix">
+        <div class="left-side">
+            <div class="one-big pop-img" data-toggle="modal" data-target="#myModal"></div>
+        </div>
+        <div class="right-side">
+            <div class="row top no-margins">
+                <div class="small pop-img" data-toggle="modal" data-target="#myModal"></div>
+                <div class="big pop-img" data-toggle="modal" data-target="#myModal"></div>
+            </div>
+            <div class="row bottom no-margins">
+                <div class="big pop-img" data-toggle="modal" data-target="#myModal"></div>
+                <div class="small pop-img" data-toggle="modal" data-target="#myModal"></div>
+            </div>
+        </div>
+    </div>
+</section>
 <section class="icons-2">
     <div class="container">
         <h2>Мы работаем с <span class="red">лучшими производителями:</span></h2>
@@ -579,7 +657,7 @@
 
     </div>
 </section>
-<section class="contacts">
+<section id="contacts" class="contacts">
     <div class="container">
         <div class="row">
             <div class="col-md-8">
@@ -605,7 +683,7 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="title">Звоните прямо сейчас:</div>
-                <ul>
+                <ul class="clearfix">
                     <li><a href="tel:+380489653245">+38 (048) 965 32 45</a></li>
                     <li><a href="tel:+380489653245">+38 (048) 965 32 45</a></li>
                     <li><a href="tel:+380992567532">+38 (099) 256 75 32</a></li>
@@ -627,10 +705,27 @@
     </div>
 </footer>
 
+<a href="#" id="to-top"></a>
+
+<!--<button class="btn btn-info btn-lg" type="button" data-toggle="modal" data-target="#myModal">Показать всплывающее окно</button>-->
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header"><button class="close" type="button" data-dismiss="modal">×</button>
+            </div>
+            <div class="modal-body">
+                <img src="#" alt="image" class="modal-image">
+            </div>
+            <div class="modal-footer"><button class="btn btn-default" type="button" data-dismiss="modal">Закрыть</button></div>
+        </div>
+    </div>
+</div>
+
 <script
         src="https://code.jquery.com/jquery-3.1.1.min.js"
         integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
         crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="/dist/js/script.js"></script>
 
 </body>
