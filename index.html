@@ -15,7 +15,36 @@
 
 </header>
 
-<section class="main"></section>
+<section class="main-page">
+    <div class="trigger">
+        <header>Обратная связь</header>
+        <div class="trigger-body">
+            <div class="wrap">
+                <div class="text">If you have any questions write to me!</div>
+                <form id="index-trigger-form" method="post">
+                    <label class="input-icon-1"><input name="name" type="text" placeholder="Ваше имя*" required=""></label>
+                    <label class="input-icon-2"><input name="tel" type="tel" placeholder="Ваш номер телефона*" required=""></label>
+                    <label class="input-icon-3"><input name="email" type="email" placeholder="Ваш e-mail*" required=""></label>
+                    <textarea name="text" placeholder="Комментарий*" required=""></textarea>
+                    <input type="submit" value="Отправить">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="banner">
+            <div class="title">
+                <h2>Кровельные</h2>
+                <h3>материалы и работы</h3>
+            </div>
+            <img src="/library/img/banner-line.png" alt="banner-separator">
+            <div class="text-bottom">
+                <span class="orange">Кровля под ключ</span>
+                <span>от 49 грн./м<sup>2</sup></span>
+            </div>
+        </div>
+    </div>
+</section>
 <section class="form-1"></section>
 <section class="icons-1">
     <div class="container">
@@ -52,7 +81,7 @@
 <section class="about">
     <div class="container">
         <div class="row">
-            <h2><img src="/library/img/logo-2.png" class="logo-2">&nbsp;&nbsp;&mdash;&nbsp;&nbsp;это:</h2>
+            <h2><img src="/library/img/logo-2.png" class="logo-2" alt="logo-img">&nbsp;&nbsp;&mdash;&nbsp;&nbsp;это:</h2>
 
             <div class="col-md-5 col-md-offset-1">
                 <div class="item">
@@ -489,28 +518,28 @@
 
         <div class="text">Lorem Ipsum - это текст-"рыба", часто используемый в печати</div>
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6">
                 <div class="prod-box box-1">
                     <span class="icon-prod-1">
                         <img src="/library/img/icons2-icon-1.png" alt="icon">
                     </span>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6">
                 <div class="prod-box box-2">
                     <span class="icon-prod-2">
                         <img src="/library/img/icons2-icon-2.png" alt="icon">
                     </span>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6">
                 <div class="prod-box box-3">
                     <span class="icon-prod-3">
                         <img src="/library/img/icons2-icon-3.png" alt="icon">
                     </span>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6">
                 <div class="prod-box box-4">
                     <span class="icon-prod-4">
                         <img src="/library/img/icons2-icon-4.png" alt="icon">
@@ -522,7 +551,7 @@
 </section>
 <section class="drop-text">
     <div class="container">
-        <article>
+        <article class="hid-text">
             <h2>Кровля в Одессе</h2>
 
             <div class="text">
@@ -533,16 +562,44 @@
                 ea eaque enim harum itaque iusto magnam magni natus nesciunt possimus quaerat qui quibusdam quis quos
                 rem saepe sequi sit ullam voluptates voluptatum? Ab alias aut culpa cum deserunt dolores exercitationem
                 explicabo, illo laboriosam maiores minima neque odio officia officiis pariatur perspiciatis porro
+                praesentium quaerat quis repudiandae, sapiente sit ut?<br><br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium atque beatae est fuga
+                necessitatibus numquam vero. Architecto asperiores debitis dolorem, facere illum inventore itaque
+                repudiandae veniam. Ab, assumenda beatae, eligendi excepturi illum impedit laboriosam magnam maiores,
+                modi nam nesciunt praesentium quod quos sed velit veniam vitae. Accusamus aliquam, dignissimos dolorem
+                ea eaque enim harum itaque iusto magnam magni natus nesciunt possimus quaerat qui quibusdam quis quos
+                rem saepe sequi sit ullam voluptates voluptatum? Ab alias aut culpa cum deserunt dolores exercitationem
+                explicabo, illo laboriosam maiores minima neque odio officia officiis pariatur perspiciatis porro
                 praesentium quaerat quis repudiandae, sapiente sit ut?
             </div>
         </article>
-        <div class="btn btn-extended">
-            <a href="#">Читать подробнее</a>
+        <div class="btn-extended">
+            <span class="text">Читать подробнее <span class="span arrow-down"></span></span>
         </div>
 
     </div>
 </section>
-<section class="form-3"></section>
+<section class="contacts">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <img src="/library/img/contacts-img.png" alt="contacts-img" class="img-responsive">
+            </div>
+            <div class="col-md-4">
+                <div class="wrap">
+                    <div class="title">Остались вопросы?</div>
+                    <div class="text">Заполните форму ниже и наши менеджеры свяжутся с Вами!</div>
+                    <form id="index-contacts" method="post">
+                        <input name="name" type="text" placeholder="Ваше имя*" required="">
+                        <input name="tel" type="tel" placeholder="Ваш номер телефона*" required="">
+                        <input name="email" type="email" placeholder="Ваш e-mail*" required="">
+                        <input type="submit" value="Отправить">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <footer class="main">
     <div class="container">
         <div class="row">
@@ -569,6 +626,12 @@
         </div>
     </div>
 </footer>
+
+<script
+        src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+<script src="/dist/js/script.js"></script>
 
 </body>
 

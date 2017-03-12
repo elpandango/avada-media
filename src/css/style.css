@@ -3,7 +3,6 @@
 body {
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
-    /*font-family: 'Lato', sans-serif;*/
 }
 
 .no-margins {
@@ -14,6 +13,8 @@ h2 {
     line-height: 46px;
     text-align: center;
     margin-top: 0;
+    word-break: break-word;
+    word-wrap: break-word;
 }
 .icon {
     width: 30px;
@@ -29,13 +30,162 @@ ul li {
 .red {
     color: #e0182a;
 }
+.orange {
+    color: #ffb533;
+}
 
 .center {
     text-align: center;
 }
-form input[type="submit"] {
-    font-family: 'Lobster', cursive;
+
+/*Header*/
+
+header.menu {
+    height: 100px;
+    background-color: blue;
 }
+
+/*Main page*/
+
+.main-page {
+    padding: 175px 0;
+    background: url(/library/img/bg-1.png) 50% 0 no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.main-page .banner {
+    width: 586px;
+    height: 348px;
+    background: url(/library/img/main-banner.png) 50% 0 no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    color: #FFF;
+}
+.main-page .banner .title {
+    position: relative;
+    top: 40px;
+}
+.main-page .banner h2 {
+    font-size: 64px;
+    line-height: 74px;
+    text-transform: uppercase;
+    margin: 0;
+}
+.main-page .banner h3 {
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+    margin: 0;
+}
+.main-page .banner img {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 55px;
+}
+.main-page .banner .text-bottom {
+    position: relative;
+    top: 65px;
+    text-align: center;
+}
+.main-page .text-bottom span {
+    font-size: 26px;
+    line-height: 36px;
+    display: block;
+}
+.main-page .text-bottom .orange {
+    font-size: 30px;
+}
+.main-page .trigger {
+    position: absolute;
+    width: 50px;
+    height: 330px;
+    background-color: #363636;
+    right: 230px;
+    font-family: 'Lato', sans-serif;
+    border-radius: 5px 0 0 5px;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.24);
+    padding-left: 50px;
+}
+.main-page .trigger:hover {
+    background-color: #323232;
+}
+.main-page .trigger header {
+    font-size: 20px;
+    line-height: 34px;
+    text-transform: uppercase;
+    color: #FFF;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    display: inline-block;
+    width: 330px;
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    position: absolute;
+    text-align: center;
+    left: 24px;
+    bottom: -17px;
+    cursor: pointer;
+}
+.main-page .trigger-body {
+    background-color: #FFF;
+    width: 230px;
+    height: 100%;
+}
+.main-page .wrap {
+    padding: 10px 16px;
+}
+.main-page .wrap .text {
+    margin: 0 auto 15px;
+}
+.main-page .trigger-body form {
+    text-align: center;
+}
+.main-page .trigger-body .input-icon-1 {
+    
+}
+.main-page .trigger-body .input-icon-2 {}
+.main-page .trigger-body .input-icon-3 {}
+.main-page .trigger-body input {
+    font-size: 14px;
+    color: #b6b6b6;
+    width: 200px;
+    height: 30px;
+    border-radius: 0;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+.main-page .trigger-body input::-webkit-input-placeholder,
+.main-page .trigger-body textarea {
+    font-size: 14px;
+    color: #b6b6b6;
+}
+.main-page .trigger-body textarea {
+    margin-bottom: 20px;
+    width: 100%;
+    resize: none;
+    border: 1px solid #E2E2E2;
+    box-sizing: border-box;
+    padding: 5px 10px;
+}
+.main-page .trigger-body input[type="submit"] {
+    font-size: 12px;
+    color: #FFF;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    width: 120px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    padding: 0;
+    background-color: #FF3A42;
+    border-radius: 25px;
+    display: block;
+}
+.main-page .trigger-body input[type="submit"]:hover {
+    background-color: #EC383F;
+}
+
 /*Icons-1*/
 .icons-1 {
     padding: 80px 0;
@@ -138,6 +288,8 @@ form input[type="submit"] {
     margin-bottom: 15px;
     border: 1px solid transparent;
     cursor: default;
+    margin: 0 auto;
+    max-width: 275px;
 }
 .prices-1 .item:hover {
      border-color: #DBDBDB;
@@ -171,13 +323,15 @@ form input[type="submit"] {
     height: 100%;
     text-align: center;
     box-sizing: border-box;
-    padding: 10px 15px;
+    padding: 0;
     display: none;
 }
 .prices-1 figcaption .wrap {
     display: table;
     width: 100%;
     height: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
 .prices-1 figcaption .wrap .content {
     display: table-cell;
@@ -305,19 +459,20 @@ form input[type="submit"] {
     margin: auto;
     background: url(/library/img/tick.png) no-repeat;
 }
-.form-2 .wrap {
+.form-2 .wrap,
+.contacts .wrap {
     padding: 40px 20px 45px;
     background-color: #FFF;
     border-radius: 8px;
 }
-.form-2 .wrap .title {
+.wrap .title {
     color: #463c31;
     font-weight: 600;
     font-size: 30px;
     line-height: 30px;
     text-align: center;
 }
-.form-2 .wrap .text {
+.wrap .text {
     color: #463c31;
     font-size: 16px;
     font-weight: 300;
@@ -326,17 +481,7 @@ form input[type="submit"] {
     margin-top: 15px;
     margin-bottom: 30px;
 }
-.form-2 input[type='submit'] {
-    background-color: #FFAD1E;
-    border: none;
-    height: 50px;
-    color: #FFF;
-    font-size: 24px;
-    line-height: 26px;
-}
-.form-2 input[type='submit']:hover {
-    background-color: #FFB533;
-}
+
 form input {
     width: 100%;
     height: 40px;
@@ -345,6 +490,26 @@ form input {
     border-radius: 5px;
     padding: 0 20px;
     margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #444444;
+}
+input[type='submit'] {
+    background-color: #FFAD1E;
+    border: none;
+    height: 50px;
+    color: #FFF;
+    font-size: 24px;
+    line-height: 26px;
+    font-family: 'Lobster', cursive;
+}
+input[type='submit']:hover {
+    background-color: #FFB533;
+}
+input::-webkit-input-placeholder {
+    font-size: 16px;
+    font-weight: 300;
+    color: #444444;
 }
 
 /*Prices-2*/
@@ -369,8 +534,9 @@ form input {
     line-height: 20px;
     border: 1px solid #DBDBDB;
 }
-.prices-2 .table-info td div {
-    padding: 23px 0;
+.prices-2 .table-info td {
+    height: 67px;
+    padding-right: 10px;
 }
 .prices-2 .table-info tr:nth-child(even) {
     background-color: #F5F5F5;
@@ -390,6 +556,16 @@ form input {
     padding: 100px 0 125px;
     background: url(/library/img/icons-2-bg.png) 50% 0 no-repeat ;
     background-size: cover;
+    position: relative;
+}
+.icons-2:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 19px;
+    background: url(/library/img/ellipse.png) 50% 0 repeat-x ;
 }
 
 .icons-2 .text {
@@ -397,6 +573,9 @@ form input {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 60px;
+}
+.icons-2 .row > div {
+    margin-bottom: 25px;
 }
 .icons-2 .prod-box {
     width: 165px;
@@ -406,6 +585,7 @@ form input {
     border: 2px solid;
     border-radius: 50%;
     background-color: #FFF;
+    margin: 0 auto;
 }
 
 .prod-box.box-1 {
@@ -430,25 +610,54 @@ form input {
     padding: 80px 0;
 }
 
-.drop-text article {
+.drop-text .hid-text {
     overflow: hidden;
     height: 150px;
     position: relative;
     margin-bottom: 70px;
 }
+.drop-text .hid-text.active + .btn-extended .arrow-down {
+    transform: rotate(-180deg);
+}
 .drop-text h2 {
     margin-bottom: 10px;
 }
-.drop-text article:after {
+.drop-text .hid-text:after {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    transition: .5s;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
 }
+.drop-text .hid-text.active:after {
+    opacity: 0;
+}
+.btn-extended {
+    text-align: center;
+    cursor: pointer;
+}
+.arrow-down {
+    display: inline-block;
+    width: 15px;
+    height: 7px;
+    background: url(/library/img/arrow-down.png) no-repeat;
+    margin-left: 5px;
+    transition: .5s;
+}
 
+/*Contacts*/
+
+.contacts {
+    padding: 85px 0 90px;
+    background: url(/library/img/map.png) 50% 0 no-repeat ;
+    background-size: cover;
+}
+.contacts .row > div {
+    /*padding: 0;*/
+}
 /*Footer*/
 
 footer.main {
