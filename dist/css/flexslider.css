@@ -14,8 +14,8 @@
  * ====================================================================================================================*/
 @font-face {
   font-family: 'flexslider-icon';
-  src: url('/library/fonts/flexslider/flexslider-icon.eot');
-  src: url('/library/fonts/flexslider/flexslider-icon.eot?#iefix') format('embedded-opentype'), url('/library/fonts/flexslider/flexslider-icon.woff') format('woff'), url('/library/fonts/flexslider/flexslider-icon.ttf') format('truetype'), url('/library/fonts/flexslider/flexslider-icon.svg#flexslider-icon') format('svg');
+  src: url('/library/fonts/flexslider-icon.eot');
+  src: url('/library/fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'), url('/library/fonts/flexslider-icon.woff') format('woff'), url('/library/fonts/flexslider-icon.ttf') format('truetype'), url('/library/fonts/flexslider-icon.svg#flexslider-icon') format('svg');
   font-weight: normal;
   font-style: normal;
 }

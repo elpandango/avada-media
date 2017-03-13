@@ -9,7 +9,7 @@ $(document).ready(function () {
         navbar = $('header.menu'),
         dropdown = navbar.find('.dropdown');
 
-
+    //Плавное раскрытие текстового блока
     button.on('click', '.text', function () {
         article = $(this).closest('.container').find('.hid-text');
         height = article.find('.text').height() + article.find('h2').height() + 15;
@@ -41,7 +41,7 @@ $(document).ready(function () {
             toTop.hide();
         }
     });
-
+    //Бургер
     toTop.on('click', function () {
         $("body,html").stop().animate({
             scrollTop:0
@@ -56,7 +56,7 @@ $(document).ready(function () {
             dropdown.slideUp(500);
         }
     });
-
+    //Плавный скролл
     $('.scroll').on('click', function (e) {
         e.preventDefault();
         $('html, body').stop().animate({
@@ -65,12 +65,18 @@ $(document).ready(function () {
 
         navbar.removeClass('active');
     });
-
+    //Модальное окно
     $('.pop-img').on('click', function(){
         var bg = $(this).css('background-image');
         bg = bg.replace('url(','').replace(')','').replace(/\"/gi, "");
 
         $('#myModal').find('.modal-image').attr('src', bg);
+    });
+
+    $('.flexslider').flexslider({
+        animation: "slide",
+        slideshow: true,
+        animationLoop: true
     });
 
 });
